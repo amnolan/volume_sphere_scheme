@@ -2,10 +2,11 @@
 Scheme program I wrote for a class. Calculates the volume of a sphere.
 
 Scheme is a functional language with some imperative functionalities. The original intent of scheme was to 
-implement a "Von Neumann" language, named for John von Neumann. Scheme is a later evolution of the programming language lisp. 
+implement a "Von Neumann" language, named for John von Neumann. Scheme is a later evolution of the programming language Lisp.
+
 This is a language which is very unlike most modern programming languages. Most things are
-accomplished through passing and chopping lists. Recursion is the most common way of accomplishing repeating tasks. 
-In a very similar way to how you learn about lambdas or functions in high school and college algebra.
+accomplished through passing and chopping lists. Recursion is the most common way of accomplishing repeated tasks. 
+It has a mathematical flavor to it, and works similar to function composition in traditional mathematics.
 
 For instance:
     
@@ -17,8 +18,16 @@ So then g(f(x)) would be?
 
     2 * (y + 2(a * b))
 
-Scheme works in a similar way to this. This concept is called "function composition". This is really just nesting function
-results within the arguments for super functions.
+Again, this concept is called "function composition". This is really just nesting function
+results within the arguments for super functions. A simpler example is:
+
+    g(f(x))
+    let f(x) = 2*1
+    and g(x) = 3*x
+    
+    3*(2*1)
+    3*(2)
+    6
 
 Here's the output for the run:
 
